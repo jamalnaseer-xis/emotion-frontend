@@ -161,16 +161,16 @@ export default function Home() {
               </span>
             </div>
             <p className="text-xs text-slate-400">
-              Once the Jetson stream is ready, replace the placeholder below
-              with a real MJPEG/RTSP player.
+              Live MJPEG stream proxied through the backend.
             </p>
             <div className="relative mt-2 aspect-video w-full overflow-hidden rounded-lg border border-slate-800 bg-slate-950">
-              {/* Placeholder image - replace src with Jetson MJPEG URL later */}
-              {/* Example: <img src="http://JETSON_IP:8000/video" className="h-full w-full object-cover" /> */}
-              <div className="flex h-full items-center justify-center text-slate-500 text-sm">
-                Video stream placeholder
-              </div>
+              <img
+                src="https://emotion-backend-production.up.railway.app/stream/jetson_1"
+                alt="Live emotion stream"
+                className="h-full w-full object-cover"
+              />
             </div>
+
           </div>
 
           {/* Current people table */}
